@@ -1,0 +1,18 @@
+<h3>Ajouter techno avec un Template Driven Form</h3>
+
+<form #f="ngForm" (submit)="addTechno(f)">
+    <label for="technoName">Nom de la techno</label>
+    <input type="text" id="technoName" name="technoName" ngModel><br>
+    <label for="technoCategory">Catégorie de la Techno</label>
+    <select id="technoCategory" name="technoCategory" ngModel>
+        <option value="">---</option>
+        <option value="front">front</option>
+        <option value="back">back</option>
+        <option value="devops">devops</option>
+    </select>
+    <br>
+
+    <label for="details">Détails</label><br>
+    <textarea id="details" cols="30" rows="10" name="details" ngModel></textarea>
+    <button type="submit">Ajouter</button>
+</form>

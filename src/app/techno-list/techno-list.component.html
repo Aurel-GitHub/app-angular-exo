@@ -1,0 +1,4 @@
+<h2>Ici toutes les technos !</h2>
+<ul *ngFor="let techno of allTechnos">
+    <app-techno-details [tech]="techno" (deleteTech)="deleteTechnoComponent($event)"></app-techno-details>
+</ul><br>
